@@ -1,3 +1,49 @@
 {
-  "app": { "title": "Task Manager" }
+  "app": { "title": "Task Manager" },
+  "nav": { "newTask": "New Task", "toggleTheme": "Toggle theme" },
+  "tasks": {
+    "title": "Tasks",
+    "empty": "No tasks found",
+    "emptyDescription": "Create your first task to get started.",
+    "noMatches": "No matching tasks",
+    "noMatchesDescription": "Try a different search or filter.",
+    "searchPlaceholder": "Search tasks...",
+    "searchLabel": "Search tasks",
+    "statusLabel": "Filter by status",
+    "statusAll": "All",
+    "statusPending": "Pending",
+    "statusCompleted": "Completed",
+    "complete": "Complete",
+    "completing": "Completing...",
+    "delete": "Delete",
+    "deleting": "Deleting...",
+    "deleteConfirm": "Delete this task?",
+    "edit": "Edit",
+    "back": "Back to tasks",
+    "page": "Page {{page}} of {{totalPages}}",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "stats": { "total": "Total", "pending": "Pending", "completed": "Completed", "overdue": "Overdue" },
+  "form": {
+    "titleLabel": "Title",
+    "descriptionLabel": "Description",
+    "create": "Create Task",
+    "creating": "Creating...",
+    "save": "Save",
+    "saving": "Saving...",
+    "titleRequired": "Title is required"
+  },
+  "errors": {
+    "network": "Unable to reach the server. Check your connection.",
+    "notFound": "The requested item was not found.",
+    "unauthorized": "You need to sign in to do that.",
+    "forbidden": "You don't have permission to do that.",
+    "conflict": "This conflicts with existing data.",
+    "server": "Something went wrong on our end. Please try again.",
+    "unknown": "An unexpected error occurred.",
+    "validation": "The data received was invalid.",
+    "tryAgain": "Try again"
+  },
+  "notFound": { "title": "Page not found", "back": "Back to tasks" }
 }

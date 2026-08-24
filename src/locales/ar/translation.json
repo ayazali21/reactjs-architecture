@@ -1,3 +1,49 @@
 {
-  "app": { "title": "مدير المهام" }
+  "app": { "title": "مدير المهام" },
+  "nav": { "newTask": "مهمة جديدة", "toggleTheme": "تبديل المظهر" },
+  "tasks": {
+    "title": "المهام",
+    "empty": "لم يتم العثور على مهام",
+    "emptyDescription": "أنشئ مهمتك الأولى للبدء.",
+    "noMatches": "لا توجد مهام مطابقة",
+    "noMatchesDescription": "جرب بحثًا أو تصفية مختلفة.",
+    "searchPlaceholder": "ابحث عن المهام...",
+    "searchLabel": "بحث المهام",
+    "statusLabel": "تصفية حسب الحالة",
+    "statusAll": "الكل",
+    "statusPending": "قيد الانتظار",
+    "statusCompleted": "مكتملة",
+    "complete": "إكمال",
+    "completing": "جارٍ الإكمال...",
+    "delete": "حذف",
+    "deleting": "جارٍ الحذف...",
+    "deleteConfirm": "هل تريد حذف هذه المهمة؟",
+    "edit": "تعديل",
+    "back": "العودة إلى المهام",
+    "page": "صفحة {{page}} من {{totalPages}}",
+    "previous": "السابق",
+    "next": "التالي"
+  },
+  "stats": { "total": "الإجمالي", "pending": "قيد الانتظار", "completed": "مكتملة", "overdue": "متأخرة" },
+  "form": {
+    "titleLabel": "العنوان",
+    "descriptionLabel": "الوصف",
+    "create": "إنشاء مهمة",
+    "creating": "جارٍ الإنشاء...",
+    "save": "حفظ",
+    "saving": "جارٍ الحفظ...",
+    "titleRequired": "العنوان مطلوب"
+  },
+  "errors": {
+    "network": "تعذر الوصول إلى الخادم. تحقق من اتصالك.",
+    "notFound": "لم يتم العثور على العنصر المطلوب.",
+    "unauthorized": "يجب عليك تسجيل الدخول للقيام بذلك.",
+    "forbidden": "ليس لديك إذن للقيام بذلك.",
+    "conflict": "هذا يتعارض مع البيانات الحالية.",
+    "server": "حدث خطأ ما من جانبنا. يرجى المحاولة مرة أخرى.",
+    "unknown": "حدث خطأ غير متوقع.",
+    "validation": "البيانات المستلمة غير صالحة.",
+    "tryAgain": "حاول مرة أخرى"
+  },
+  "notFound": { "title": "الصفحة غير موجودة", "back": "العودة إلى المهام" }
 }

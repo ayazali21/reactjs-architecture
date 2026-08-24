@@ -33,6 +33,10 @@ api.interceptors.response.use(
       return Promise.reject(new ApiError('Unable to reach the server. Check your connection.', 'network'));
     }
 
+    if (error.response?.status === 401) {
+      // TODO: trigger logout/redirect once auth routes exist
+    }
+
     const status = error.response.status as number;
     const backendMessage = error.response.data?.error?.message as string | undefined;
     const kind = statusToKind(status);

@@ -6,9 +6,12 @@ import { ErrorState } from '@/components/common/error-state';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Button } from '@/components/ui/button';
 import { ApiError } from '@/lib/api-error';
+import { useTranslation } from 'react-i18next';
 
 export function TaskList() {
   const [page, setPage] = useState(1);
+  const { t } = useTranslation();
+  
   const limit = 10;
   const { data, isPending, isFetching, isError, error, refetch } = useTasks(page, limit);
 
@@ -25,7 +28,7 @@ export function TaskList() {
   }
 
   if (data.data.length === 0) {
-    return <EmptyState title="No tasks found" description="Create your first task to get started." />;
+    return <EmptyState title={t('tasks.empty')} description={t('tasks.emptyDescription')} />;
   }
 
   const totalPages = Math.ceil(data.total / data.limit);
@@ -40,11 +43,11 @@ export function TaskList() {
 
       <div className="mt-4 flex items-center justify-between">
         <Button size="sm" variant="outline" disabled={page <= 1} onClick={() => setPage((p) => p - 1)}>
-          Previous
+          {t('tasks.previous')}
         </Button>
-        <span className="text-sm text-slate-500">Page {page} of {totalPages}</span>
+        <span className="text-sm text-slate-500">{t('tasks.page', { page, totalPages })}</span>
         <Button size="sm" variant="outline" disabled={page >= totalPages} onClick={() => setPage((p) => p + 1)}>
-          Next
+          {t('tasks.next')}
         </Button>
       </div>
     </div>
